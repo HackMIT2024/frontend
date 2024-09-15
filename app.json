@@ -12,7 +12,14 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to take pictures for emergency reports.",
+        "NSMicrophoneUsageDescription": "This app uses the microphone to record audio for emergency reports.",
+        "NSLocationWhenInUseUsageDescription": "This app uses your location to provide accurate emergency information.",
+        "NSHealthShareUsageDescription": "This app accesses your health data to provide accurate emergency information."
+      },
+      "bundleIdentifier": "com.anonymous.emergency-responder"
     },
     "android": {
       "adaptiveIcon": {
@@ -22,6 +29,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "react-native-health"
+    ]
   }
 }
